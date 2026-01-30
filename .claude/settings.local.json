@@ -18,7 +18,8 @@
       "Bash(gh run watch:*)",
       "Bash(gh release delete:*)",
       "Bash(git tag:*)",
-      "Bash(gh run view:*)"
+      "Bash(gh run view:*)",
+      "Bash(gh repo delete:*)"
     ]
   }
 }
