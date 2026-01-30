@@ -25,13 +25,34 @@ Terminal typing trainer focused on **accuracy first**, with data-driven practice
 
 ## Installation
 
+### Homebrew (macOS/Linux)
 ```bash
-cargo install --path .
+brew install sethwebster/tap/typehero
 ```
 
-Or run directly:
+### npm
 ```bash
-cargo run --release
+npm install -g typehero
+```
+
+Or run without installing:
+```bash
+npx typehero
+```
+
+### Shell Installer
+```bash
+curl -sSL https://github.com/sethwebster/typehero/releases/latest/download/typehero-installer.sh | sh
+```
+
+### Cargo
+```bash
+cargo install typehero
+```
+
+### From Source
+```bash
+cargo install --path .
 ```
 
 ## Usage
