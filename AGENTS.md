@@ -1,4 +1,4 @@
-# TypeFix - Typing Trainer Architecture
+# TypeHero - Typing Trainer Architecture
 
 ## Core Principles
 

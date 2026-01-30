@@ -45,7 +45,7 @@ impl Display {
             .queue(SetForegroundColor(Color::Cyan))?
             .queue(Print("═".repeat(self.width as usize)))?
             .queue(cursor::MoveTo(0, 1))?
-            .queue(Print("  TypeFix - Accuracy-First Typing Trainer"))?
+            .queue(Print("  TypeHero - Accuracy-First Typing Trainer"))?
             .queue(cursor::MoveTo(0, 2))?
             .queue(Print("═".repeat(self.width as usize)))?
             .queue(ResetColor)?;
@@ -261,7 +261,7 @@ impl Display {
             .queue(Print("═".repeat(self.width as usize)))?;
         row += 1;
         out.queue(cursor::MoveTo(0, row))?
-            .queue(Print("  TypeFix - Select Practice Mode"))?;
+            .queue(Print("  TypeHero - Select Practice Mode"))?;
         row += 1;
         out.queue(cursor::MoveTo(0, row))?
             .queue(Print("═".repeat(self.width as usize)))?

@@ -5,7 +5,7 @@ Cargo.lock
 *.pdb
 
 # Stats
-.typefix_stats.json
+.typehero_stats.json
 
 # IDE
 .vscode/

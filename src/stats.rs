@@ -40,7 +40,7 @@ impl Default for Stats {
 impl Stats {
     fn stats_file() -> PathBuf {
         let mut path = dirs::home_dir().unwrap_or_else(|| PathBuf::from("."));
-        path.push(".typefix_stats.json");
+        path.push(".typehero_stats.json");
         path
     }
 

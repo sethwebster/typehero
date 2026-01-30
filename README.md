@@ -1,4 +1,4 @@
-# TypeFix
+# TypeHero
 
 Terminal typing trainer focused on **accuracy first**, with data-driven practice targeting your specific problem areas.
 
@@ -16,7 +16,7 @@ Terminal typing trainer focused on **accuracy first**, with data-driven practice
 - **Bigram tracking**: Identifies your slowest character pairs
 - **Error analysis**: Tracks most error-prone keys
 - **Targeted practice**: Auto-generates exercises from your problem areas
-- **Persistent stats**: All sessions saved to `~/.typefix_stats.json`
+- **Persistent stats**: All sessions saved to `~/.typehero_stats.json`
 - **Multiple modes**:
   - Random words (common English)
   - Code patterns (programming constructs)
@@ -86,7 +86,7 @@ Example: 60 WPM at 90% accuracy = 60 × 0.81 = 48.6 adjusted WPM
 
 ## Stats Location
 
-All statistics are saved to `~/.typefix_stats.json`
+All statistics are saved to `~/.typehero_stats.json`
 
 Format:
 - Session summaries (timestamp, WPM, accuracy)
