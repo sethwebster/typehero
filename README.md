@@ -27,12 +27,12 @@ Terminal typing trainer focused on **accuracy first**, with data-driven practice
 
 ### npm (recommended)
 ```bash
-npm install -g typehero
+npm install -g type-hero
 ```
 
 Or run without installing:
 ```bash
-npx typehero
+npx type-hero
 ```
 
 ### Shell Installer (macOS/Linux)
