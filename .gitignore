@@ -6,6 +6,9 @@ Cargo.lock
 
 # Stats
 .typehero_stats.json
+.typehero.db
+.typehero.db-shm
+.typehero.db-wal
 
 # IDE
 .vscode/

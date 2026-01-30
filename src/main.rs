@@ -154,14 +154,15 @@ fn show_stats(display: &Display, stats: &Stats) -> Result<(), Box<dyn std::error
     row += 2;
 
     // Overall stats
+    let sessions = stats.sessions();
     out.queue(cursor::MoveTo(2, row))?
-        .queue(Print(format!("Total sessions: {}", stats.sessions.len())))?;
+        .queue(Print(format!("Total sessions: {}", sessions.len())))?;
     row += 1;
     out.queue(cursor::MoveTo(2, row))?
-        .queue(Print(format!("Total keystrokes: {}", stats.total_keys)))?;
+        .queue(Print(format!("Total keystrokes: {}", stats.total_keys_public())))?;
     row += 1;
     out.queue(cursor::MoveTo(2, row))?
-        .queue(Print(format!("Total errors: {}", stats.total_errors)))?;
+        .queue(Print(format!("Total errors: {}", stats.total_errors_public())))?;
     row += 1;
     out.queue(cursor::MoveTo(2, row))?
         .queue(Print(format!(
@@ -177,12 +178,12 @@ fn show_stats(display: &Display, stats: &Stats) -> Result<(), Box<dyn std::error
     row += 2;
 
     // Recent sessions
-    if !stats.sessions.is_empty() {
+    if !sessions.is_empty() {
         out.queue(cursor::MoveTo(2, row))?
             .queue(Print("Recent sessions (last 5):"))?;
         row += 1;
 
-        let recent = stats.sessions.iter().rev().take(5);
+        let recent = sessions.iter().take(5);
         for session in recent {
             out.queue(cursor::MoveTo(4, row))?.queue(Print(format!(
                 "{} - {:.1} WPM ({:.1}% acc) → {:.1} adj WPM",

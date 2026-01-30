@@ -136,7 +136,7 @@ impl TypingSession {
         };
 
         // Add to stats and save
-        self.stats.add_session(summary.clone());
+        let _ = self.stats.add_session(summary.clone());
         self.stats.save()?;
 
         Ok(summary)
