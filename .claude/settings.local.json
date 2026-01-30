@@ -7,7 +7,12 @@
       "Bash(cargo build:*)",
       "Bash(cargo check:*)",
       "Bash(./target/release/typefix:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(gh repo create:*)",
+      "Bash(cargo install:*)",
+      "Bash(cargo dist init:*)",
+      "Bash(~/.asdf/installs/rust/stable/bin/dist init:*)",
+      "Bash(~/.asdf/installs/rust/stable/bin/dist generate:*)"
     ]
   }
 }

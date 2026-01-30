@@ -2,6 +2,13 @@
 name = "typehero"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+description = "Terminal typing trainer focused on accuracy with constraint-based guided practice"
+repository = "https://github.com/sethwebster/typehero"
+homepage = "https://github.com/sethwebster/typehero"
+authors = ["Seth Webster <seth@sethwebster.com>"]
+keywords = ["typing", "trainer", "cli", "terminal", "practice"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 crossterm = "0.28"
@@ -11,3 +18,8 @@ rand = "0.8"
 chrono = { version = "0.4", features = ["serde"] }
 dirs = "5.0"
 rusqlite = { version = "0.32", features = ["bundled"] }
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
