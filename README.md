@@ -50,6 +50,17 @@ cargo install typehero
 cargo install --path .
 ```
 
+## Uninstallation
+
+```bash
+curl -sSL https://github.com/sethwebster/typehero/releases/latest/download/uninstall.sh | sh
+```
+
+Or manually:
+- npm: `npm uninstall -g @sethwebster/typehero`
+- cargo: `cargo uninstall typehero`
+- shell installer: Remove binary from `~/.local/bin/typehero` or `~/.cargo/bin/typehero`
+
 ## Usage
 
 Launch the app and select a mode:
