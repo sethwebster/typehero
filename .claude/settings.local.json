@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo init:*)",
+      "Bash(rustc:*)",
+      "Bash(rustup update:*)",
+      "Bash(cargo build:*)",
+      "Bash(cargo check:*)",
+      "Bash(./target/release/typefix:*)",
+      "Bash(git init:*)"
+    ]
+  }
+}
