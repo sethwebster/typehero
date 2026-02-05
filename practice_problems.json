@@ -1,0 +1,604 @@
+{
+  "problems": [
+    {
+      "id": 1,
+      "language": "javascript",
+      "code": "const users = data.filter(u => u.age > 18).map(u => ({ ...u, adult: true }))",
+      "difficulty": "medium"
+    },
+    {
+      "id": 2,
+      "language": "python",
+      "code": "result = [x**2 for x in range(10) if x % 2 == 0]",
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "language": "rust",
+      "code": "let sum: i32 = numbers.iter().filter(|&&x| x > 0).sum();",
+      "difficulty": "medium"
+    },
+    {
+      "id": 4,
+      "language": "typescript",
+      "code": "const fetchUser = async (id: number): Promise<User> => await api.get(`/users/${id}`)",
+      "difficulty": "medium"
+    },
+    {
+      "id": 5,
+      "language": "javascript",
+      "code": "const total = items.reduce((acc, item) => acc + item.price, 0)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 6,
+      "language": "go",
+      "code": "if err := db.Query(ctx, &result, query); err != nil { return err }",
+      "difficulty": "medium"
+    },
+    {
+      "id": 7,
+      "language": "python",
+      "code": "users = {u['id']: u['name'] for u in data if u['active']}",
+      "difficulty": "medium"
+    },
+    {
+      "id": 8,
+      "language": "rust",
+      "code": "let result = match value { Some(v) => v * 2, None => 0 };",
+      "difficulty": "easy"
+    },
+    {
+      "id": 9,
+      "language": "javascript",
+      "code": "const { name, email, ...rest } = user || {}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 10,
+      "language": "typescript",
+      "code": "type Result<T> = { ok: true; data: T } | { ok: false; error: string }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 11,
+      "language": "python",
+      "code": "sorted_items = sorted(items, key=lambda x: x.created_at, reverse=True)",
+      "difficulty": "medium"
+    },
+    {
+      "id": 12,
+      "language": "javascript",
+      "code": "const debounced = fn => { let timer; return (...args) => clearTimeout(timer) || (timer = setTimeout(() => fn(...args), 300)) }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 13,
+      "language": "rust",
+      "code": "let names: Vec<String> = users.into_iter().map(|u| u.name).collect();",
+      "difficulty": "medium"
+    },
+    {
+      "id": 14,
+      "language": "go",
+      "code": "result := make(map[string]int)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 15,
+      "language": "typescript",
+      "code": "const api = <T>(url: string): Promise<T> => fetch(url).then(r => r.json())",
+      "difficulty": "medium"
+    },
+    {
+      "id": 16,
+      "language": "python",
+      "code": "with open('data.json', 'r') as f: data = json.load(f)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 17,
+      "language": "javascript",
+      "code": "const grouped = items.reduce((acc, item) => ({ ...acc, [item.type]: [...(acc[item.type] || []), item] }), {})",
+      "difficulty": "hard"
+    },
+    {
+      "id": 18,
+      "language": "rust",
+      "code": "let doubled: Vec<_> = vec.iter().map(|x| x * 2).collect();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 19,
+      "language": "go",
+      "code": "names := []string{\"alice\", \"bob\", \"charlie\"}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 20,
+      "language": "javascript",
+      "code": "const isValid = str => /^[a-zA-Z0-9]+$/.test(str)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 21,
+      "language": "python",
+      "code": "results = await asyncio.gather(*[fetch(url) for url in urls])",
+      "difficulty": "medium"
+    },
+    {
+      "id": 22,
+      "language": "typescript",
+      "code": "const keys = <T extends object>(obj: T): (keyof T)[] => Object.keys(obj) as (keyof T)[]",
+      "difficulty": "hard"
+    },
+    {
+      "id": 23,
+      "language": "javascript",
+      "code": "const uniqueIds = [...new Set(items.map(i => i.id))]",
+      "difficulty": "easy"
+    },
+    {
+      "id": 24,
+      "language": "rust",
+      "code": "if let Some(user) = users.get(&id) { println!(\"{}\", user.name); }",
+      "difficulty": "medium"
+    },
+    {
+      "id": 25,
+      "language": "python",
+      "code": "valid = all(x > 0 for x in values)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 26,
+      "language": "go",
+      "code": "users, err := repo.FindAll(ctx)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 27,
+      "language": "javascript",
+      "code": "const retry = async (fn, times = 3) => { try { return await fn() } catch (e) { return times > 1 ? retry(fn, times - 1) : Promise.reject(e) } }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 28,
+      "language": "typescript",
+      "code": "interface User { id: number; name: string; email?: string }",
+      "difficulty": "easy"
+    },
+    {
+      "id": 29,
+      "language": "python",
+      "code": "merged = {**defaults, **user_config}",
+      "difficulty": "easy"
+    },
+    {
+      "id": 30,
+      "language": "rust",
+      "code": "let max = numbers.iter().max().unwrap_or(&0);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 31,
+      "language": "javascript",
+      "code": "const sortByKey = (arr, key) => [...arr].sort((a, b) => a[key] - b[key])",
+      "difficulty": "medium"
+    },
+    {
+      "id": 32,
+      "language": "go",
+      "code": "for _, user := range users { fmt.Println(user.Name) }",
+      "difficulty": "easy"
+    },
+    {
+      "id": 33,
+      "language": "python",
+      "code": "filtered = list(filter(lambda x: x.status == 'active', items))",
+      "difficulty": "medium"
+    },
+    {
+      "id": 34,
+      "language": "typescript",
+      "code": "const pick = <T, K extends keyof T>(obj: T, keys: K[]): Pick<T, K> => keys.reduce((acc, key) => ({ ...acc, [key]: obj[key] }), {} as Pick<T, K>)",
+      "difficulty": "hard"
+    },
+    {
+      "id": 35,
+      "language": "javascript",
+      "code": "const chunks = arr => arr.reduce((acc, _, i) => i % 2 ? acc : [...acc, arr.slice(i, i + 2)], [])",
+      "difficulty": "hard"
+    },
+    {
+      "id": 36,
+      "language": "rust",
+      "code": "let result: Result<i32, String> = Ok(42);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 37,
+      "language": "python",
+      "code": "try: result = risky_operation() except ValueError as e: logger.error(e)",
+      "difficulty": "medium"
+    },
+    {
+      "id": 38,
+      "language": "go",
+      "code": "defer file.Close()",
+      "difficulty": "easy"
+    },
+    {
+      "id": 39,
+      "language": "javascript",
+      "code": "const cached = new Map(); const memoize = fn => (...args) => { const key = JSON.stringify(args); return cached.has(key) ? cached.get(key) : cached.set(key, fn(...args)).get(key) }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 40,
+      "language": "typescript",
+      "code": "const isUser = (obj: unknown): obj is User => typeof obj === 'object' && obj !== null && 'id' in obj",
+      "difficulty": "hard"
+    },
+    {
+      "id": 41,
+      "language": "python",
+      "code": "counts = Counter(word.lower() for word in words)",
+      "difficulty": "medium"
+    },
+    {
+      "id": 42,
+      "language": "rust",
+      "code": "let filtered: Vec<_> = items.into_iter().filter(|x| x.is_valid()).collect();",
+      "difficulty": "medium"
+    },
+    {
+      "id": 43,
+      "language": "javascript",
+      "code": "const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))",
+      "difficulty": "easy"
+    },
+    {
+      "id": 44,
+      "language": "go",
+      "code": "select { case <-ctx.Done(): return ctx.Err() case result := <-ch: return result }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 45,
+      "language": "python",
+      "code": "matrix = [[0] * cols for _ in range(rows)]",
+      "difficulty": "medium"
+    },
+    {
+      "id": 46,
+      "language": "typescript",
+      "code": "const useDebounce = <T>(value: T, delay: number): T => { const [debounced, setDebounced] = useState(value); useEffect(() => { const timer = setTimeout(() => setDebounced(value), delay); return () => clearTimeout(timer) }, [value, delay]); return debounced }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 47,
+      "language": "javascript",
+      "code": "const flatten = arr => arr.reduce((acc, val) => acc.concat(Array.isArray(val) ? flatten(val) : val), [])",
+      "difficulty": "medium"
+    },
+    {
+      "id": 48,
+      "language": "rust",
+      "code": "let hashmap: HashMap<String, i32> = HashMap::new();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 49,
+      "language": "python",
+      "code": "decorated = [func(x) for func in functions for x in values]",
+      "difficulty": "medium"
+    },
+    {
+      "id": 50,
+      "language": "go",
+      "code": "type Server struct { addr string; handler http.Handler }",
+      "difficulty": "easy"
+    },
+    {
+      "id": 51,
+      "language": "javascript",
+      "code": "const pipeline = (...fns) => x => fns.reduce((acc, fn) => fn(acc), x)",
+      "difficulty": "medium"
+    },
+    {
+      "id": 52,
+      "language": "typescript",
+      "code": "export const createStore = <T>(initial: T): [() => T, (value: T) => void] => { let state = initial; return [() => state, (value) => { state = value }] }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 53,
+      "language": "python",
+      "code": "pairs = list(zip(keys, values))",
+      "difficulty": "easy"
+    },
+    {
+      "id": 54,
+      "language": "rust",
+      "code": "numbers.sort_by(|a, b| b.cmp(a));",
+      "difficulty": "easy"
+    },
+    {
+      "id": 55,
+      "language": "javascript",
+      "code": "const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 56,
+      "language": "go",
+      "code": "data, err := json.Marshal(response)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 57,
+      "language": "python",
+      "code": "unique_sorted = sorted(set(items), key=lambda x: x.priority)",
+      "difficulty": "medium"
+    },
+    {
+      "id": 58,
+      "language": "typescript",
+      "code": "const identity = <T>(x: T): T => x",
+      "difficulty": "easy"
+    },
+    {
+      "id": 59,
+      "language": "javascript",
+      "code": "const omit = (obj, keys) => Object.fromEntries(Object.entries(obj).filter(([k]) => !keys.includes(k)))",
+      "difficulty": "medium"
+    },
+    {
+      "id": 60,
+      "language": "rust",
+      "code": "let exists = map.contains_key(&key);",
+      "difficulty": "easy"
+    },
+    {
+      "id": 61,
+      "language": "python",
+      "code": "flattened = [item for sublist in nested for item in sublist]",
+      "difficulty": "medium"
+    },
+    {
+      "id": 62,
+      "language": "go",
+      "code": "ch := make(chan int, 100)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 63,
+      "language": "javascript",
+      "code": "const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min",
+      "difficulty": "easy"
+    },
+    {
+      "id": 64,
+      "language": "typescript",
+      "code": "type Nullable<T> = { [K in keyof T]: T[K] | null }",
+      "difficulty": "medium"
+    },
+    {
+      "id": 65,
+      "language": "python",
+      "code": "result = functools.reduce(lambda acc, x: acc + x, values, 0)",
+      "difficulty": "medium"
+    },
+    {
+      "id": 66,
+      "language": "rust",
+      "code": "let reversed: String = s.chars().rev().collect();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 67,
+      "language": "javascript",
+      "code": "const intersection = (a, b) => a.filter(x => b.includes(x))",
+      "difficulty": "easy"
+    },
+    {
+      "id": 68,
+      "language": "go",
+      "code": "go func() { for msg := range ch { process(msg) } }()",
+      "difficulty": "medium"
+    },
+    {
+      "id": 69,
+      "language": "python",
+      "code": "class User: def __init__(self, name: str, age: int): self.name, self.age = name, age",
+      "difficulty": "medium"
+    },
+    {
+      "id": 70,
+      "language": "typescript",
+      "code": "const assertNever = (x: never): never => { throw new Error(`Unexpected value: ${x}`) }",
+      "difficulty": "medium"
+    },
+    {
+      "id": 71,
+      "language": "javascript",
+      "code": "const query = new URLSearchParams({ page: '1', limit: '10' }).toString()",
+      "difficulty": "medium"
+    },
+    {
+      "id": 72,
+      "language": "rust",
+      "code": "let joined = parts.join(\", \");",
+      "difficulty": "easy"
+    },
+    {
+      "id": 73,
+      "language": "python",
+      "code": "formatted = f\"{name}: {count:,} items ({percent:.1%})\"",
+      "difficulty": "medium"
+    },
+    {
+      "id": 74,
+      "language": "go",
+      "code": "var wg sync.WaitGroup",
+      "difficulty": "easy"
+    },
+    {
+      "id": 75,
+      "language": "javascript",
+      "code": "const pluralize = (count, singular, plural = singular + 's') => count === 1 ? singular : plural",
+      "difficulty": "medium"
+    },
+    {
+      "id": 76,
+      "language": "typescript",
+      "code": "const entries = <T extends Record<string, unknown>>(obj: T): [keyof T, T[keyof T]][] => Object.entries(obj) as [keyof T, T[keyof T]][]",
+      "difficulty": "hard"
+    },
+    {
+      "id": 77,
+      "language": "python",
+      "code": "validated = [x for x in data if validate(x)]",
+      "difficulty": "easy"
+    },
+    {
+      "id": 78,
+      "language": "rust",
+      "code": "let owned: String = borrowed.to_string();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 79,
+      "language": "javascript",
+      "code": "const throttle = (fn, wait) => { let last = 0; return (...args) => { const now = Date.now(); if (now - last >= wait) { last = now; fn(...args) } } }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 80,
+      "language": "go",
+      "code": "resp, err := http.Get(url)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 81,
+      "language": "python",
+      "code": "import re; emails = re.findall(r'\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b', text)",
+      "difficulty": "hard"
+    },
+    {
+      "id": 82,
+      "language": "typescript",
+      "code": "const prop = <T, K extends keyof T>(key: K) => (obj: T): T[K] => obj[key]",
+      "difficulty": "medium"
+    },
+    {
+      "id": 83,
+      "language": "javascript",
+      "code": "const partition = (arr, pred) => arr.reduce(([pass, fail], item) => pred(item) ? [[...pass, item], fail] : [pass, [...fail, item]], [[], []])",
+      "difficulty": "hard"
+    },
+    {
+      "id": 84,
+      "language": "rust",
+      "code": "let bytes = text.as_bytes();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 85,
+      "language": "python",
+      "code": "squared = map(lambda x: x**2, numbers)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 86,
+      "language": "go",
+      "code": "ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)",
+      "difficulty": "medium"
+    },
+    {
+      "id": 87,
+      "language": "javascript",
+      "code": "const clamp = (num, min, max) => Math.min(Math.max(num, min), max)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 88,
+      "language": "typescript",
+      "code": "type DeepPartial<T> = { [K in keyof T]?: T[K] extends object ? DeepPartial<T[K]> : T[K] }",
+      "difficulty": "hard"
+    },
+    {
+      "id": 89,
+      "language": "python",
+      "code": "path = os.path.join(base_dir, 'data', filename)",
+      "difficulty": "easy"
+    },
+    {
+      "id": 90,
+      "language": "rust",
+      "code": "let sum: i32 = (1..=100).sum();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 91,
+      "language": "javascript",
+      "code": "const range = (start, end, step = 1) => Array.from({ length: Math.ceil((end - start) / step) }, (_, i) => start + i * step)",
+      "difficulty": "hard"
+    },
+    {
+      "id": 92,
+      "language": "go",
+      "code": "switch status { case 200: return nil; default: return fmt.Errorf(\"status %d\", status) }",
+      "difficulty": "medium"
+    },
+    {
+      "id": 93,
+      "language": "python",
+      "code": "reversed = list(reversed(items))",
+      "difficulty": "easy"
+    },
+    {
+      "id": 94,
+      "language": "typescript",
+      "code": "const curry = <A, B, C>(fn: (a: A, b: B) => C) => (a: A) => (b: B): C => fn(a, b)",
+      "difficulty": "hard"
+    },
+    {
+      "id": 95,
+      "language": "javascript",
+      "code": "const average = arr => arr.reduce((sum, val) => sum + val, 0) / arr.length",
+      "difficulty": "easy"
+    },
+    {
+      "id": 96,
+      "language": "rust",
+      "code": "let trimmed = s.trim().to_lowercase();",
+      "difficulty": "easy"
+    },
+    {
+      "id": 97,
+      "language": "python",
+      "code": "batch = [items[i:i+size] for i in range(0, len(items), size)]",
+      "difficulty": "medium"
+    },
+    {
+      "id": 98,
+      "language": "go",
+      "code": "result := strings.Join(parts, \", \")",
+      "difficulty": "easy"
+    },
+    {
+      "id": 99,
+      "language": "javascript",
+      "code": "const deepClone = obj => JSON.parse(JSON.stringify(obj))",
+      "difficulty": "easy"
+    },
+    {
+      "id": 100,
+      "language": "typescript",
+      "code": "const exhaustive = (value: never): never => { throw new Error(`Unhandled case: ${value}`) }",
+      "difficulty": "medium"
+    }
+  ]
+}

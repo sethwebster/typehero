@@ -19,7 +19,13 @@
       "Bash(gh release delete:*)",
       "Bash(git tag:*)",
       "Bash(gh run view:*)",
-      "Bash(gh repo delete:*)"
+      "Bash(gh repo delete:*)",
+      "Bash(npm uninstall:*)",
+      "Bash(grep:*)",
+      "Bash(launchctl list:*)",
+      "Bash(bash:*)",
+      "Bash(timeout:*)",
+      "Bash(examples/spinner_demo)"
     ]
   }
 }

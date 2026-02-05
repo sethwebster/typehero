@@ -1,0 +1,604 @@
+{
+  "problems": [
+    {
+      "id": 1,
+      "statement": "Filter an array of users to only adults (age >= 18) and map to their names",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 2,
+      "statement": "Reverse a string without using the built-in reverse method",
+      "difficulty": "easy",
+      "suggested_language": "python"
+    },
+    {
+      "id": 3,
+      "statement": "Check if a string is a valid palindrome ignoring spaces and case",
+      "difficulty": "easy",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 4,
+      "statement": "Sum all numbers in an array using reduce",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 5,
+      "statement": "Count occurrences of each character in a string",
+      "difficulty": "easy",
+      "suggested_language": "python"
+    },
+    {
+      "id": 6,
+      "statement": "Remove duplicates from an array while preserving order",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 7,
+      "statement": "Convert a string to title case (capitalize first letter of each word)",
+      "difficulty": "easy",
+      "suggested_language": "python"
+    },
+    {
+      "id": 8,
+      "statement": "Find the maximum value in a slice without using built-in max",
+      "difficulty": "easy",
+      "suggested_language": "go"
+    },
+    {
+      "id": 9,
+      "statement": "Check if an array contains a specific value",
+      "difficulty": "easy",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 10,
+      "statement": "Merge two objects/dicts with the second overwriting first on conflicts",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 11,
+      "statement": "Get the first n elements of an array safely (handle short arrays)",
+      "difficulty": "easy",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 12,
+      "statement": "Convert an array of key-value pairs into an object/dict",
+      "difficulty": "easy",
+      "suggested_language": "python"
+    },
+    {
+      "id": 13,
+      "statement": "Flatten a nested array one level deep",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 14,
+      "statement": "Check if all elements in an array satisfy a condition",
+      "difficulty": "easy",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 15,
+      "statement": "Extract all unique values from an array of objects by a key",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 16,
+      "statement": "Split a string by a delimiter and filter out empty strings",
+      "difficulty": "easy",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 17,
+      "statement": "Create a function that returns a greeting with a default name parameter",
+      "difficulty": "easy",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 18,
+      "statement": "Find the index of the first element matching a condition",
+      "difficulty": "easy",
+      "suggested_language": "python"
+    },
+    {
+      "id": 19,
+      "statement": "Pad a string to a minimum length with a specified character",
+      "difficulty": "easy",
+      "suggested_language": "go"
+    },
+    {
+      "id": 20,
+      "statement": "Check if a number is within a given range (inclusive)",
+      "difficulty": "easy",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 21,
+      "statement": "Group an array of numbers into even and odd buckets",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 22,
+      "statement": "Truncate a string to a max length adding ellipsis if needed",
+      "difficulty": "easy",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 23,
+      "statement": "Calculate the average of numbers in a list",
+      "difficulty": "easy",
+      "suggested_language": "python"
+    },
+    {
+      "id": 24,
+      "statement": "Create a range of numbers from start to end (exclusive)",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 25,
+      "statement": "Safely access a deeply nested object property with a default value",
+      "difficulty": "easy",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 26,
+      "statement": "Capitalize the first character of a string",
+      "difficulty": "easy",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 27,
+      "statement": "Remove all whitespace from a string",
+      "difficulty": "easy",
+      "suggested_language": "go"
+    },
+    {
+      "id": 28,
+      "statement": "Check if a string starts with any prefix from a list",
+      "difficulty": "easy",
+      "suggested_language": "python"
+    },
+    {
+      "id": 29,
+      "statement": "Convert an object's keys to an array",
+      "difficulty": "easy",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 30,
+      "statement": "Return the last element of an array or a default if empty",
+      "difficulty": "easy",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 31,
+      "statement": "Implement a debounce function that delays execution until pause in calls",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 32,
+      "statement": "Parse a query string into an object of key-value pairs",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 33,
+      "statement": "Group an array of objects by a specified key",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 34,
+      "statement": "Implement retry logic that attempts a function up to n times with delay",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 35,
+      "statement": "Deep clone an object without using JSON.parse/stringify",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 36,
+      "statement": "Validate an email address using regex",
+      "difficulty": "medium",
+      "suggested_language": "python"
+    },
+    {
+      "id": 37,
+      "statement": "Implement a simple LRU cache with get and set operations",
+      "difficulty": "medium",
+      "suggested_language": "go"
+    },
+    {
+      "id": 38,
+      "statement": "Binary search for a value in a sorted array returning the index",
+      "difficulty": "medium",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 39,
+      "statement": "Partition an array into chunks of a specified size",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 40,
+      "statement": "Implement Promise.all from scratch",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 41,
+      "statement": "Find the intersection of two arrays",
+      "difficulty": "medium",
+      "suggested_language": "python"
+    },
+    {
+      "id": 42,
+      "statement": "Convert a nested object to dot notation keys",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 43,
+      "statement": "Implement a throttle function that limits calls to once per interval",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 44,
+      "statement": "Sort an array of objects by multiple keys with different directions",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 45,
+      "statement": "Implement memoization for a function with multiple arguments",
+      "difficulty": "medium",
+      "suggested_language": "python"
+    },
+    {
+      "id": 46,
+      "statement": "Create a function that composes multiple functions left to right",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 47,
+      "statement": "Find all permutations of a small string",
+      "difficulty": "medium",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 48,
+      "statement": "Implement a simple pub/sub event emitter",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 49,
+      "statement": "Merge two sorted arrays into one sorted array",
+      "difficulty": "medium",
+      "suggested_language": "go"
+    },
+    {
+      "id": 50,
+      "statement": "Parse a CSV line handling quoted fields with commas",
+      "difficulty": "medium",
+      "suggested_language": "python"
+    },
+    {
+      "id": 51,
+      "statement": "Implement a curry function that works with any arity",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 52,
+      "statement": "Find the longest common prefix among an array of strings",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 53,
+      "statement": "Flatten a deeply nested array to a single level",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 54,
+      "statement": "Implement a Result type with map and flatMap methods",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 55,
+      "statement": "Check if two objects are deeply equal",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 56,
+      "statement": "Parse a semver string into major, minor, patch components",
+      "difficulty": "medium",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 57,
+      "statement": "Implement a simple rate limiter using timestamps",
+      "difficulty": "medium",
+      "suggested_language": "go"
+    },
+    {
+      "id": 58,
+      "statement": "Find the difference between two arrays (elements in first not in second)",
+      "difficulty": "medium",
+      "suggested_language": "python"
+    },
+    {
+      "id": 59,
+      "statement": "Convert camelCase to snake_case",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 60,
+      "statement": "Implement zip that combines two arrays into pairs",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 61,
+      "statement": "Create a timeout wrapper that rejects a promise after n milliseconds",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 62,
+      "statement": "Find the first duplicate value in an array in O(n) time",
+      "difficulty": "medium",
+      "suggested_language": "python"
+    },
+    {
+      "id": 63,
+      "statement": "Implement pick to select specific keys from an object",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 64,
+      "statement": "Create a function that retries with exponential backoff",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 65,
+      "statement": "Validate a JSON web token structure without verifying signature",
+      "difficulty": "medium",
+      "suggested_language": "go"
+    },
+    {
+      "id": 66,
+      "statement": "Implement omit to exclude specific keys from an object",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 67,
+      "statement": "Find two numbers in an array that sum to a target value",
+      "difficulty": "medium",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 68,
+      "statement": "Convert a function with callback to return a Promise",
+      "difficulty": "medium",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 69,
+      "statement": "Implement a simple observable with subscribe and next methods",
+      "difficulty": "medium",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 70,
+      "statement": "Rotate an array by k positions to the right",
+      "difficulty": "medium",
+      "suggested_language": "python"
+    },
+    {
+      "id": 71,
+      "statement": "Implement a type-safe generic Stack with push, pop, and peek",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 72,
+      "statement": "Create a mutex wrapper for safe concurrent access in async code",
+      "difficulty": "hard",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 73,
+      "statement": "Implement a concurrent task runner with max parallelism limit",
+      "difficulty": "hard",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 74,
+      "statement": "Build a recursive descent parser for simple arithmetic expressions",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 75,
+      "statement": "Implement topological sort for a dependency graph",
+      "difficulty": "hard",
+      "suggested_language": "python"
+    },
+    {
+      "id": 76,
+      "statement": "Create a channel-based worker pool with fixed concurrency",
+      "difficulty": "hard",
+      "suggested_language": "go"
+    },
+    {
+      "id": 77,
+      "statement": "Implement a trie data structure with insert and search",
+      "difficulty": "hard",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 78,
+      "statement": "Build a simple JSON path query selector",
+      "difficulty": "hard",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 79,
+      "statement": "Implement async generator that yields results as they complete",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 80,
+      "statement": "Create a diff algorithm for two strings showing changes",
+      "difficulty": "hard",
+      "suggested_language": "python"
+    },
+    {
+      "id": 81,
+      "statement": "Implement a lock-free queue using atomic operations",
+      "difficulty": "hard",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 82,
+      "statement": "Build a middleware chain pattern with next() propagation",
+      "difficulty": "hard",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 83,
+      "statement": "Implement generic constraint types for a validation library",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 84,
+      "statement": "Create a context manager with timeout and cancellation",
+      "difficulty": "hard",
+      "suggested_language": "go"
+    },
+    {
+      "id": 85,
+      "statement": "Implement lazy evaluation for a sequence with map/filter/take",
+      "difficulty": "hard",
+      "suggested_language": "python"
+    },
+    {
+      "id": 86,
+      "statement": "Build a recursive type for JSON schema validation",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 87,
+      "statement": "Implement a graph with breadth-first traversal returning paths",
+      "difficulty": "hard",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 88,
+      "statement": "Create a promise-based semaphore for resource limiting",
+      "difficulty": "hard",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 89,
+      "statement": "Implement the visitor pattern for an AST node structure",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 90,
+      "statement": "Build a concurrent-safe singleton with double-checked locking",
+      "difficulty": "hard",
+      "suggested_language": "go"
+    },
+    {
+      "id": 91,
+      "statement": "Implement a state machine with typed transitions",
+      "difficulty": "hard",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 92,
+      "statement": "Create a reactive stream with backpressure handling",
+      "difficulty": "hard",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 93,
+      "statement": "Implement discriminated union types with exhaustive matching",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 94,
+      "statement": "Build a connection pool with health checks and auto-reconnect",
+      "difficulty": "hard",
+      "suggested_language": "go"
+    },
+    {
+      "id": 95,
+      "statement": "Implement async iterators with proper cleanup on early termination",
+      "difficulty": "hard",
+      "suggested_language": "python"
+    },
+    {
+      "id": 96,
+      "statement": "Create a compile-time validated SQL query builder with type inference",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 97,
+      "statement": "Implement a coroutine scheduler with cooperative multitasking",
+      "difficulty": "hard",
+      "suggested_language": "rust"
+    },
+    {
+      "id": 98,
+      "statement": "Build a circuit breaker pattern with half-open state",
+      "difficulty": "hard",
+      "suggested_language": "javascript"
+    },
+    {
+      "id": 99,
+      "statement": "Implement a generic repository pattern with type-safe queries",
+      "difficulty": "hard",
+      "suggested_language": "typescript"
+    },
+    {
+      "id": 100,
+      "statement": "Create a graceful shutdown handler with timeout and cleanup hooks",
+      "difficulty": "hard",
+      "suggested_language": "go"
+    }
+  ]
+}

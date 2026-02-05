@@ -1,5 +1,7 @@
 use rand::seq::SliceRandom;
 use rand::Rng;
+use std::fs;
+use std::path::PathBuf;
 
 const COMMON_WORDS: &[&str] = &[
     "the", "be", "to", "of", "and", "a", "in", "that", "have", "it", "for", "not", "on", "with",
@@ -28,6 +30,11 @@ pub enum ExerciseMode {
     Targeted(Vec<String>),
     #[allow(dead_code)]
     Custom(String),
+}
+
+pub struct CodeSample {
+    pub code: String,
+    pub language: String,
 }
 
 pub fn generate_exercise(mode: &ExerciseMode, word_count: usize) -> String {
@@ -109,4 +116,47 @@ pub fn generate_key_drill(ch: char, reps: usize) -> String {
         }
     }
     text
+}
+
+pub fn load_random_code_sample() -> Option<CodeSample> {
+    let mut rng = rand::thread_rng();
+
+    // Try multiple possible locations for code-samples
+    let possible_paths = vec![
+        PathBuf::from("code-samples/solutions"),
+        PathBuf::from("../code-samples/solutions"),
+        dirs::home_dir()?.join(".typehero/code-samples/solutions"),
+    ];
+
+    for solutions_dir in possible_paths {
+        if let Ok(entries) = fs::read_dir(&solutions_dir) {
+            let files: Vec<PathBuf> = entries
+                .filter_map(|e| e.ok())
+                .map(|e| e.path())
+                .filter(|p| {
+                    p.extension()
+                        .and_then(|ext| ext.to_str())
+                        .map(|ext| matches!(ext, "js" | "ts" | "py" | "rs" | "go"))
+                        .unwrap_or(false)
+                })
+                .collect();
+
+            if let Some(file) = files.choose(&mut rng) {
+                let language = file
+                    .extension()
+                    .and_then(|ext| ext.to_str())
+                    .unwrap_or("txt")
+                    .to_string();
+
+                if let Ok(content) = fs::read_to_string(file) {
+                    return Some(CodeSample {
+                        code: content,
+                        language,
+                    });
+                }
+            }
+        }
+    }
+
+    None
 }

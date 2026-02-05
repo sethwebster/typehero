@@ -1,3 +1,4 @@
+mod code_challenge;
 mod display;
 mod engine;
 mod exercises;
@@ -5,13 +6,14 @@ mod guided_v2;
 mod input;
 mod stats;
 
+use code_challenge::CodeChallenge;
 use crossterm::{
     execute,
     terminal::{disable_raw_mode, enable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen},
 };
 use display::Display;
 use engine::{show_summary, TypingSession};
-use exercises::{generate_exercise, ExerciseMode};
+use exercises::{generate_exercise, load_random_code_sample, ExerciseMode};
 use input::{read_key, InputEvent};
 use stats::Stats;
 use std::io::stdout;
@@ -21,10 +23,11 @@ const MENU_OPTIONS: &[&str] = &[
     "1. Guided Practice (learn proper finger placement)",
     "2. Random Words (50 words)",
     "3. Code Patterns (50 patterns)",
-    "4. Targeted Practice (your problem areas)",
-    "5. Quick Drill (20 words)",
-    "6. View Statistics",
-    "7. Quit",
+    "4. CodeJam (real programming problems)",
+    "5. Targeted Practice (your problem areas)",
+    "6. Quick Drill (20 words)",
+    "7. View Statistics",
+    "8. Quit",
 ];
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -93,6 +96,20 @@ fn run_app() -> Result<(), Box<dyn std::error::Error>> {
                         show_summary(&display, &summary, &stats)?;
                     }
                     3 => {
+                        // CodeJam
+                        if let Some(sample) = load_random_code_sample() {
+                            let mut challenge = CodeChallenge::new(sample.code, sample.language);
+                            let _ = challenge.run(&display, &stats);
+                        } else {
+                            // Fallback to code patterns if no samples found
+                            let text = generate_exercise(&ExerciseMode::Code, 50);
+                            let mut session = TypingSession::new(text, stats.clone());
+                            let summary = session.run(&display)?;
+                            stats = session.stats().clone();
+                            show_summary(&display, &summary, &stats)?;
+                        }
+                    }
+                    4 => {
                         // Targeted Practice
                         let slowest = stats.slowest_bigrams(10);
                         if slowest.is_empty() {
@@ -112,7 +129,7 @@ fn run_app() -> Result<(), Box<dyn std::error::Error>> {
                             show_summary(&display, &summary, &stats)?;
                         }
                     }
-                    4 => {
+                    5 => {
                         // Quick Drill
                         let text = generate_exercise(&ExerciseMode::RandomWords, 20);
                         let mut session = TypingSession::new(text, stats.clone());
@@ -120,11 +137,11 @@ fn run_app() -> Result<(), Box<dyn std::error::Error>> {
                         stats = session.stats().clone();
                         show_summary(&display, &summary, &stats)?;
                     }
-                    5 => {
+                    6 => {
                         // View Statistics
                         show_stats(&display, &stats)?;
                     }
-                    6 => {
+                    7 => {
                         // Quit
                         break;
                     }
