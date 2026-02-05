@@ -1,14 +1,14 @@
 import type { NextConfig } from "next";
 
-const repoName = "typehero";
-const isGithubPages = process.env.GITHUB_PAGES === "true";
+const rawBasePath = process.env.NEXT_BASE_PATH?.trim();
+const basePath = rawBasePath && rawBasePath.length > 0 ? rawBasePath : undefined;
 
 const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   images: { unoptimized: true },
-  basePath: isGithubPages ? `/${repoName}` : undefined,
-  assetPrefix: isGithubPages ? `/${repoName}/` : undefined,
+  basePath,
+  assetPrefix: basePath ? `${basePath}/` : undefined,
 };
 
 export default nextConfig;
