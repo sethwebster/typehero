@@ -346,52 +346,6 @@ impl GuidedPractice {
                     continue;
                 }
                 first_attempt_in_lesson = false;
-            } else {
-                // After first attempt: brief pause with option to navigate
-                display.render_guided_lesson(
-                    &lesson.name,
-                    &lesson.active_fingers,
-                    &text,
-                    &[],
-                    0,
-                    None,
-                    self.current_lesson_idx,
-                    self.lessons.len(),
-                    &self.attempts,
-                    &mastery_status,
-                )?;
-
-                // Check for navigation during brief pause
-                let start = Instant::now();
-                let mut navigated = false;
-                while start.elapsed() < Duration::from_millis(500) {
-                    match read_key(Duration::from_millis(50))? {
-                        InputEvent::CtrlN => {
-                            if self.current_lesson_idx < self.lessons.len() - 1 {
-                                self.current_lesson_idx += 1;
-                                self.load_attempts_for_current_lesson();
-                                first_attempt_in_lesson = true;
-                                navigated = true;
-                                break;
-                            }
-                        }
-                        InputEvent::CtrlP => {
-                            if self.current_lesson_idx > 0 {
-                                self.current_lesson_idx -= 1;
-                                self.load_attempts_for_current_lesson();
-                                first_attempt_in_lesson = true;
-                                navigated = true;
-                                break;
-                            }
-                        }
-                        InputEvent::Escape => return Ok(()),
-                        _ => {}
-                    }
-                }
-
-                if navigated {
-                    continue;
-                }
             }
 
             // Countdown before practice
